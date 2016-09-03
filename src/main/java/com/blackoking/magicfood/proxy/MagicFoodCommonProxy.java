@@ -9,7 +9,6 @@ public class MagicFoodCommonProxy
 
     public void preInit(File configFile)
     {
-        ItemChickenFly.registerItems();
     }
 
     public void init()
