@@ -17,7 +17,7 @@ public class MagicFoodItems
     public static void registerItems()
     {
         // ici on va les enregistrer
-        GameRegistry.registerItem(NOM, "chicken_fly");
+        GameRegistry.registerItem (NOM, "chicken_fly");
         
     }
     

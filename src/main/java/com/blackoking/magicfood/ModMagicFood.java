@@ -19,7 +19,7 @@ public class ModMagicFood
     @Instance(ModMagicFood.MODID)
     public static ModMagicFood instance;
     
-    @SidedProxy(clientSide = "com.blackoking.magicfood.MagicFoodClient", serverSide = "com.blackoking.magicfood.MagicFoodServer")
+    @SidedProxy(clientSide = "com.blackoking.magicfood.proxy.MagicFoodClientProxy", serverSide = "com.blackoking.magicfood.proxy.MagicFoodServerProxy")
     public static MagicFoodCommonProxy proxy;
     
     public static Logger logger;

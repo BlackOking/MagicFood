@@ -2,7 +2,7 @@ package com.blackoking.magicfood.proxy;
 
 import java.io.File;
 
-import com.blackoking.magicfood.items.ItemChickenFly;
+import com.blackoking.magicfood.items.MagicFoodItems;
 
 public class MagicFoodClientProxy extends MagicFoodCommonProxy
 {
@@ -10,7 +10,7 @@ public class MagicFoodClientProxy extends MagicFoodCommonProxy
     public void preInit(File configFile)
     {
         super.preInit(configFile);
-        ItemChickenFly.registerItemsModels();
+        MagicFoodItems.registerItemsModels();
     }
 
     @Override
