@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class MagicFoodItems
 {
     // ici on va déclarer les items
-    public static final Item CHICKENFLY = new ItemChickenFly(501, 5, 1.5F, false).setUnlocalizedName("ChickenFly").setCreativeTab(CreativeTabs.FOOD);
+    public static final Item CHICKENFLY = new ItemChickenFly(501, 5, 1.5F, false).setAlwaysEdible().setUnlocalizedName("ChickenFly").setCreativeTab(CreativeTabs.FOOD);
    
     public static void registerItems()
     {
