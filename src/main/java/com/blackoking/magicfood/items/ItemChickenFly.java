@@ -17,5 +17,6 @@ public class ItemChickenFly extends ItemFood
     }
     
     protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player) {
+        player.addPotionEffect(new PotionEffect(MobEffects.LEVITATION, 120, 1));
     }
 }
