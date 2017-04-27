@@ -4,12 +4,16 @@ import org.apache.logging.log4j.Logger;
 
 import com.blackoking.magicfood.proxy.MagicFoodCommonProxy;
 
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = "magicfood", name = "MagicFood", version = "0.1", acceptedMinecraftVersions = "[1.10.1,1.10.2]")
 public class ModMagicFood
@@ -35,5 +39,6 @@ public class ModMagicFood
     public void init(FMLInitializationEvent event)
     {
         proxy.init();
+        MagicFoodRecipes.registerRecipes();
     }
 }
